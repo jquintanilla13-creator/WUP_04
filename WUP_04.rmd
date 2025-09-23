@@ -66,6 +66,14 @@ summary.aov(model1)
 
 When observing the inferential result, I noticed that there is a P-Value of 0.000236 which indicates that there is a statistical difference between at least two of these categories.
 
+
+```{r}
+par(mar=c(3,17,2,2))
+plot(TukeyHSD(model1,conf.level=0.98),las=2,)
+```
+
+When analyzing this plot, the only confidence intervals that zero doesn't pass through are LT High School, Graduate School and High School, Graduate. This indicates that they are different. 
+
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
